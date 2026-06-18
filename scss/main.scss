@@ -1,7 +1,3 @@
-// BASE //
 @use "./partials/base/reset";
-@use "./partials/base/tipografia";
 
-.col{
-    margin: 0;
-}
+@use "./partials/components/cards";

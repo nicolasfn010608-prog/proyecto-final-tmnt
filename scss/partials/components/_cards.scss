@@ -1,0 +1,51 @@
+.card.tmnt-card{
+  border-radius: 26px !important;
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.18),
+    inset 0 0 0 1px rgba(255,255,255,.10);
+
+  display: flex;
+  flex-direction: column;
+
+  .card-img-top{
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 18px 18px 16px;
+  }
+
+  // Tipografía
+  &,
+  *{
+    font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+  }
+
+  .card-title{
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 1.05rem;
+  }
+
+  .card-text{
+    margin: 0;
+    font-weight: 400;
+    opacity: .92;
+    line-height: 1.45;
+  }
+
+  // En celu, un toque más de padding visual
+  @media (max-width: 575.98px){
+    border-radius: 24px !important;
+  }
+}
